@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto";
+  background-image: url("./shared/backdrop.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.navbar {
+  background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+  padding: 5px 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logoBox {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgb(204, 202, 202) 100%);
+  padding: 0px 10px;
+  margin: 0px;
+  border: solid white 0px;
+  border-radius: 5px;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item  {
+padding: 0 10px 0 10px;
+transition: .5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron {
+  background: rgba(209, 209, 209, 0.568);
+  margin-bottom: 0;
+}
+
+#infoBox {
+  background: #1d1d1def;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#signUpForm { 
+  background: rgba(209, 209, 209, 0.568);
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background: #3d3d3d;
+  color: white;
+  padding: 20px 0;
+  
 }
+
+/* card */
+
+.card-title {
+  background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  transition: .5s;
+}
+
+.card-body {
+  padding: 0;
+}
+
+#spotListing {
+  filter: grayscale(100%);
+  transition: .5s;
+}
+
+#spotListing:hover {
+  filter: grayscale(0%)
+}
+
+/* extra stuff  */
+#logoBox h2 {
+  margin: 0;
+}
+
+.nav-item:hover{
+background: rgb(236, 95, 95) 100%;
+}
+
+h1 {
+  color: rgba(176,22,14,1);
+}
+
+#buttonChange {
+  background-color: #259298;
+  border: solid 0px;
+}
+
+#iconChange {
+  color: #259298;
+}
+
+#infoBox .fa-map-marker, .fa-calendar, .fa-user-plus {
+  font-size: 3em;
+  margin: 1rem;
+}
+
